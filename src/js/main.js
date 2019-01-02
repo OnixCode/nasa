@@ -53,6 +53,16 @@ var apod = {
       var url = `https://api.nasa.gov/planetary/apod?api_key=${key}&date=${date}`;
       let _this = this;
 
+      //var url = 'http:';
+
+      //var xhr = new XMLHttpRequest();
+      //xhr.open('Get', 'http');
+      //xhr.send();
+
+      //xhr.onload = function(){
+        //let result = JSON.parse(xhr.response);
+      //} JS equilvelant to the ajax below
+
       $.ajax({
           url: url
       }).done(function(result){
